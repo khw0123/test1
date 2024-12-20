@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  font-family: "SCDream5";
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+}
+@font-face {
+  font-family: "SCDream5";
+  font-style: normal;
+  font-weight: 400;
+  src: url(font/SCDream5.otf);
+}
+.main-section {
+  height: 680px;
+  background-image: url(../img/KakaoTalk_20241018_151329489.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.main-title-container {
+  width: 1000px;
+  text-align: center;
+  font-size: 90px;
+  padding-top: 200px;
+  margin: 0 auto;
+  font-family: "SCDream5";
+  color: white;
+}
+.main-test-button {
+  margin: 40px auto;
+  background-color: black;
+  width: 150px;
+  height: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: 1px white solid;
+}
+.main-test-button a {
+  text-decoration: none;
+  color: white;
+}
+
+.browser-tab-section {
+  background-color: #d7d7d7;
+  height: 34px;
+  bottom: 10;
+}
+.browser-tab-nav {
+  display: flex;
+  gap: 50px;
+  position: relative;
+}
+
+.browser-tab-nav-item {
+  width: 150px;
+  height: 40px;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c5c5c5;
+  position: absolute;
+  top: -40px;
+  gap: 50px;
+  left: 10px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.5),
+    /* 위쪽 그림자, 진한 */ 0 4px 8px rgba(0, 0, 0, 0.2); /* 아래쪽 그림자, 연한 */
+}
+
+.browser-tab-nav-item:nth-child(1) {
+  left: 20px;
+}
+
+.browser-tab-nav-item:nth-child(2) {
+  left: 190px;
+}
+
+.browser-tab-nav-item:nth-child(3) {
+  left: 360px;
+}
+
+.info-text-container {
+  width: 1000px;
+  padding-top: 200px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+  font-size: 30px;
+  line-height: 2;
+}
+
+.browser-tab-section a {
+  text-decoration: none;
+  color: black;
+}
+
+.top-button {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.top-button a {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.transition-link {
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+.transition-link:hover {
+  transform: scale(1.1);
+}
